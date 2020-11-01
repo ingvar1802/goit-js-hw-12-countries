@@ -3,10 +3,11 @@ import refs from './refs';
 import oneCountryInfo from '../templates/oneCountryTemp.hbs';
 import countriesList from '../templates/countriesTemp.hbs';
 import '@pnotify/core/dist/BrightTheme.css';
+import '@pnotify/core/dist/PNotify.css';
 
 
 const { error } = require('@pnotify/core');
-var debounce = require('lodash.debounce');
+const debounce = require('lodash.debounce');
 
 refs.searchForm.addEventListener('input', debounce(countrySearchInputHandler, 500));
 
